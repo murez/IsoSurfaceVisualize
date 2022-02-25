@@ -1,0 +1,141 @@
+\usepackage{hyperref}
+\usepackage{mdframed}
+\usepackage{lipsum}
+\usepackage{amsmath}
+% \usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{ifpdf}
+\usepackage{todonotes}
+\usepackage{booktabs} % For formal tables
+\usepackage{url}
+% \usepackage{amssymb}% http://ctan.org/pkg/amssymb
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+% \usepackage{color}
+\usepackage{tcolorbox}
+\usepackage{balance}
+\usepackage{makecell}
+\usepackage{verbatim}
+\usepackage{svg}
+%\usepackage{cite}
+\usepackage{rotating}
+
+\usepackage{stfloats}
+
+\usepackage{bussproofs}
+\usepackage{lipsum} % just for the example
+\usepackage{mathpartir}
+% *** CITATION PACKAGES ***
+% *** GRAPHICS RELATED PACKAGES ***
+%
+% *** MATH PACKAGES ***
+
+% *** SPECIALIZED LIST PACKAGES ***
+\usepackage{algorithmic}
+\usepackage{listings}
+% *** ALIGNMENT PACKAGES ***
+\usepackage{array}
+
+
+% *** SUBFIGURE PACKAGES ***
+\usepackage{caption}
+%\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{mwe}
+% *** FLOAT PACKAGES ***
+%\usepackage{stfloats}
+%\newcommand{\code}[1]{{\fontfamily{cmtt}\fontseries{m}\fontshape{n}\selectfont\smaller{#1}}}
+\newcommand{\code}[1]{{\fontfamily{cmtt}\fontseries{m}\fontshape{n}\selectfont\small{#1}}}
+
+
+\newcommand{\TBD}{{\color{red}(TBD)}}
+\newcommand{\haoyu}[1]{{\textcolor{red}{#1}}}
+
+
+% *** PDF, URL AND HYPERLINK PACKAGES ***
+\usepackage{url}
+\usepackage{listings}
+\lstset{frame=tb,
+  language=Python,
+  aboveskip=2mm,
+  belowskip=1mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3,
+  xleftmargin=1.5em,
+  framextopmargin=0em,
+  framexleftmargin=1em
+} 
+
+\usepackage{todonotes}
+%$\Large\color{green}{\checkmark}$
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+\usepackage{subfigure}
+
+\usepackage{tikz}
+\usetikzlibrary{
+  arrows.meta,
+  chains,
+  matrix,
+  positioning,
+}
+\usepackage{xcolor}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,inner sep=0.8pt] (char) {\textcolor{red}{#1}};}}
+            
+            
+\usepackage[para]{threeparttable}
+
+% local packages
+\usepackage{algorithm2e}
+\usepackage{xcolor}
+
+%----------------------------------
+% custom style commands
+%----------------------------------
+% variable style command
+\newcommand{\xvar}[1]{\textsf{#1}}
+
+% horizontal alignment command
+\newcommand{\xvbox}[2]{\makebox[#1][l]{#2}}
+
+%----------------------------------
+% set algorithm2e styles
+%----------------------------------
+% change algorithm font size
+\SetAlFnt{\footnotesize}
+
+% change algorithm caption style
+\newcommand{\xAlCapSty}[1]{\small\sffamily\bfseries\MakeUppercase{#1}}
+\SetAlCapSty{xAlCapSty}
+
+% comment style (algorithms)
+\newcommand{\xCommentSty}[1]{\scriptsize\ttfamily\textcolor{blue}{#1}}
+\SetCommentSty{xCommentSty}
+
+% change line number style
+\newcommand\mynlfont[1]{\scriptsize\sffamily{#1}}
+\SetNlSty{mynlfont}{}{} 
+
+ % add the line numbers
+\LinesNumbered
+
+% comments right justified
+\SetSideCommentRight
+
+% don't print semicolon
+\DontPrintSemicolon
+
+% ruled algorithm
+\RestyleAlgo{algoruled}
