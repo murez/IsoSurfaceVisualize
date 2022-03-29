@@ -1,5 +1,7 @@
 # Final Project
 
+![CT ](report/report/imgs/cthead.png)
+
 Group Number:
 * Member 1: 张厶元 2019533240
 * Member 2: 姚凯欣 2019533072
